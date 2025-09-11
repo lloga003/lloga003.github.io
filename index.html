@@ -1,21 +1,22 @@
-summ<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Lee M Logan - Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f4f4f9;
       color: #333;
-      text-align: center;
+      line-height: 1.6;
     }
     header {
-      background: #4a90e2;
+      background: #2c3e50;
       color: white;
+      text-align: center;
       padding: 2rem 1rem;
     }
     header img {
@@ -24,23 +25,52 @@ summ<!DOCTYPE html>
       height: 150px;
       object-fit: cover;
       margin-top: 1rem;
+      border: 4px solid white;
+    }
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     main {
       padding: 2rem;
-      max-width: 700px;
+      max-width: 900px;
       margin: auto;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
     }
     a.button {
       display: inline-block;
       margin-top: 1rem;
       padding: 0.75rem 1.25rem;
-      background: #4a90e2;
+      background: #2c3e50;
       color: white;
       text-decoration: none;
       border-radius: 8px;
     }
     a.button:hover {
-      background: #357abd;
+      background: #1a252f;
     }
   </style>
 </head>
@@ -48,18 +78,86 @@ summ<!DOCTYPE html>
   <header>
     <h1>Lee M Logan</h1>
     <img src="your-photo.jpg" alt="Profile Photo">
+    <p>Graduate Student @ Old Dominion University | Aspiring Software & AI Developer</p>
   </header>
 
-  <main>
-    <h2>About Me</h2>
-    <p>
-      I am 20 years old and an ODU graduate student I have extensive experience programming as well as 3d printing and modeling. 
-      I recently completed a Internship at AMA/NASA. My job was focused on developing an integrated teams notr taking app titled MoRTI. 
-      It had a multitude of functions such as taking notes and report generation. It helped my professionally develop my skills in ai integration with teams using cloud-based infrastructure and psql/sql. 
-      In the near future I am moving to a new internship under the ARAMIS dev team for AMA/NASA.
-    </p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#resume">Resume</a>
+  </nav>
 
-    <a href="2025_Resume_Lee_Logan.pdf" class="button" target="_blank">View My Resume</a>
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science graduate from Old Dominion University (Class of 2025, GPA: 3.9) 
+        currently pursuing my Master’s degree in Computer Science with an expected graduation in June 2026. 
+        I am passionate about artificial intelligence, software development, and data-driven problem solving. 
+        My experience spans AI integration, cloud computing, web scraping, and database management.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><b>Old Dominion University</b> – B.S. in Computer Science, Honors Graduate, GPA: 3.9 (2025)</li>
+        <li><b>Old Dominion University</b> – M.S. in Computer Science (Expected 2026)</li>
+        <li><b>Kecoughtan High School</b>, Advanced Diploma, GPA: 4.4, Highest Honors (2023)</li>
+        <li><b>Governor's School for Science and Technology</b>, Hampton, VA</li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><b>AI Intern, Analytical Machine Associates @ NASA Langley (Jun–Sep 2025)</b><br>
+          Developed MoRTI, an AI-powered Teams integration app with AWS, Python, Power Automate, and PSQL.</li>
+        <li><b>Volunteer Researcher, Old Dominion University (2023–Present)</b><br>
+          Conducted research on AI, social media analytics, and database systems under Dr. Jian Wu and Dr. Jing He.</li>
+        <li><b>Drone Research, Hampton University (2022–2023)</b><br>
+          Designed and built drone-mounted carriers for Amazon delivery research.</li>
+        <li><b>Junior Swim Coach, Willow Oaks Pool (2020)</b><br>
+          Taught swimming fundamentals, coached teams, and organized meets.</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills & Technologies</h2>
+      <ul>
+        <li>Programming: Python, Java, C++</li>
+        <li>Databases: SQL, PostgreSQL</li>
+        <li>Web: HTML, Web Scraping (BeautifulSoup, OpenAlex)</li>
+        <li>Cloud Platforms: AWS, Power Automate</li>
+        <li>Tools: Git/GitHub, Teams Integration</li>
+        <li>Other: CAD software (Autodesk, Makerspace), 3D Printing, CNC machining</li>
+      </ul>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements">
+      <h2>Achievements & Activities</h2>
+      <ul>
+        <li>Honors College Member (2023–2024)</li>
+        <li>AWS Cloud Practitioner Certified</li>
+        <li>Leader of CS121G Research Team (2023)</li>
+        <li>National Workplace Readiness Certification (2019)</li>
+        <li>Member of ODU Valorant Esports Team</li>
+      </ul>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <a href="2025_Resume_Lee_Logan.pdf" class="button" target="_blank">Download My Resume</a>
+    </section>
   </main>
 </body>
 </html>
